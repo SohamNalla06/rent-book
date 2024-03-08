@@ -8,15 +8,14 @@ import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 //import Card from './components/Card';
-import Spinner from "./components/Spinner";
 function App() {
   return (
     <div className="app">
       <ListBooks />
+      <h1 className="text-underline text-[10rem]">TEST TESTE</h1>
       <Navbar />
       <Login />
       <Signup />
-      <Spinner />
     </div>
   );
 }
