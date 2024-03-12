@@ -485,56 +485,17 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.container {
-  width: 100%;
+.static {
+  position: static;
 }
-@media (min-width: 640px) {
-
-  .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-
-  .container {
-    max-width: 1536px;
-  }
-}
-.collapse {
-  visibility: collapse;
-}
-.fixed {
-  position: fixed;
+.absolute {
+  position: absolute;
 }
 .m-2 {
   margin: 0.5rem;
 }
 .m-4 {
   margin: 1rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.me-auto {
-  margin-inline-end: auto;
 }
 .border {
   border-width: 1px;

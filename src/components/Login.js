@@ -1,31 +1,66 @@
 import React from "react";
-const Login = () => {
+import {
+  Grid,
+  Paper,
+  Avatar,
+  TextField,
+  FormControlLabel,
+  Button,
+  Typography,
+  Link,
+  btnstyle,
+} from "@mui/material";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Checkbox from "@mui/material/Checkbox";
+function Login() {
+  const PaperStyle = {
+    padding: 20,
+    height: "70vh",
+    width: 280,
+    margin: "20px auto",
+  };
+  const avatarStyle = { backgroundColor: "blue" };
+  const btnstyle = { margin: "8px 0" };
   return (
     <div>
-      <form>
-        <div className="container">
-          <div className="header">
-            <label htmlFor="email">Email</label>
-            <input type="email" placeholder="enter email" />
-          </div>
-        </div>
-        <div className="input">
-          <label htmlFor="email">Password</label>
-          <input type="email" placeholder="enter password" />
-        </div>
-        <button className="btn btn-success">Log in </button>
-        <div className="input" placeholder="password">
-          <input type="password" />
-        </div>
-        <div className="forgot-passowrd">
-          lost password ?<span>Click here!!</span>
-        </div>
-        <div className="submit-container"></div>
-        <div className="submit">Sign-up</div>
-        <div className="submit">Login</div>
-      </form>
+      <Link className="login" to="/Login"></Link>
+      <Grid>
+        <Paper elevation={10} style={PaperStyle}>
+          <Grid align="center">
+            <Avatar style={avatarStyle}>
+              <LockOutlinedIcon />
+            </Avatar>
+            <h2>Sign-In</h2>
+          </Grid>
+          <TextField
+            label="Username"
+            placeholder="Enter UserName"
+            fullWidth
+            required
+          />
+          <TextField
+            label="Password"
+            placeholder="Enter Password"
+            type="password"
+            fullWidth
+            required
+          />
+          <FormControlLabel
+            control={<Checkbox name="checked" color="primary" />}
+            label="Remember Me"
+          />
+          <Button type="submit" color="primary" variant="contained">
+            Sign in
+          </Button>
+          <Typography>
+            <Link href="#">Forgot password ?</Link>
+          </Typography>
+          <Typography>
+            Do you have an account ?<Link href="#">Sign up</Link>
+          </Typography>
+        </Paper>
+      </Grid>
     </div>
   );
-};
-
+}
 export default Login;

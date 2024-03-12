@@ -37,11 +37,13 @@ const ListBooks = () => {
         }}
         style={{
           background: "white",
-          width: "450px",
-          height: "40px",
-          borderRadius: "4px",
-          border: "2px solid",
-          position: "fixed",
+          width: "900px",
+          height: "35px",
+          borderRadius: "10px",
+          border: "1px solid",
+          position: "absolute",
+          top: "12%",
+          left: "25%",
         }}
       />
       <div className="books-container">
